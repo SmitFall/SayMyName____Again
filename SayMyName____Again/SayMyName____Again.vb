@@ -14,12 +14,19 @@ Module SayMyName____Again
         Dim userResponse As String
 
         Console.WriteLine("Please Enter your name")
+        userResponse = Console.ReadLine()
 
         If userResponse = "Emily" Then
-            Console.WriteLine("Welcome back Emily")
+            Console.WriteLine("Welcome back Emily!")
+        ElseIf userResponse = "John" Then
+            Console.WriteLine("Hi John! Good to see you back online. ")
+        ElseIf userResponse = "Tim" Then
+            Console.WriteLine("Hi Tim!")
+        Else
+            Console.WriteLine("Wait a second, Who are you?")
         End If
-
-        Console.Read()
+        Console.ReadLine()
     End Sub
 
 End Module
+
